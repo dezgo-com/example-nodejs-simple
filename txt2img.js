@@ -10,11 +10,10 @@ encodedParams.append("seed", "568542368");
 
 const options = {
   method: 'POST',
-  url: 'https://dezgo.p.rapidapi.com/text2image',
+  url: 'https://api.dezgo.com/text2image',
   headers: {
     'content-type': 'application/x-www-form-urlencoded',
-    'X-RapidAPI-Key': process.env.API_KEY,
-    'X-RapidAPI-Host': 'dezgo.p.rapidapi.com'
+    'X-Dezgo-Key': process.env.API_KEY,
   },
   data: encodedParams,
   responseType: "arraybuffer"

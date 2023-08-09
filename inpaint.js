@@ -15,10 +15,9 @@ data.pipe(concat({encoding: 'buffer'}, buf => {
 
     const options = {
         method: 'POST',
-        url: 'https://dezgo.p.rapidapi.com/inpainting',
+        url: 'https://api.dezgo.com/inpainting',
         headers: {
-            'X-RapidAPI-Key': process.env.API_KEY,
-            'X-RapidAPI-Host': 'dezgo.p.rapidapi.com',
+            'X-Dezgo-Key': process.env.API_KEY,
             ...data.getHeaders()
           },
         data: buf,
