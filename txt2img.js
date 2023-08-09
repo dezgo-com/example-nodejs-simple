@@ -4,9 +4,11 @@ const fs = require("fs");
 const encodedParams = new URLSearchParams();
 encodedParams.append("prompt", "an astronaut riding a horse, digital art, epic lighting, highly-detailed masterpiece trending HQ");
 encodedParams.append("negative_prompt", "ugly, poorly drawn, deformed, deformed limbs");
-encodedParams.append("model", "stablediffusion_1_5");
 encodedParams.append("guidance", "8");
 encodedParams.append("seed", "568542368");
+
+//Use this to select which model to use:
+//encodedParams.append("model", "dreamshaper_7");
 
 const options = {
   method: 'POST',
